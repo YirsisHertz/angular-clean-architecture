@@ -35,6 +35,9 @@ dependencies:
   tslib:
     specifier: ^2.3.0
     version: 2.6.2
+  uuid:
+    specifier: ^9.0.1
+    version: 9.0.1
   zone.js:
     specifier: ~0.14.2
     version: 0.14.2
@@ -52,6 +55,9 @@ devDependencies:
   '@types/jasmine':
     specifier: ~5.1.0
     version: 5.1.4
+  '@types/uuid':
+    specifier: ^9.0.7
+    version: 9.0.7
   jasmine-core:
     specifier: ~5.1.0
     version: 5.1.1
@@ -2454,6 +2460,10 @@ packages:
     resolution: {integrity: sha512-MK9V6NzAS1+Ud7JV9lJLFqW85VbC9dq3LmwZCuBe4wBDgKC0Kj/jd8Xl+nSviU+Qc3+m7umHHyHg//2KSa0a0Q==}
     dependencies:
       '@types/node': 20.10.5
+    dev: true
+
+  /@types/uuid@9.0.7:
+    resolution: {integrity: sha512-WUtIVRUZ9i5dYXefDEAI7sh9/O7jGvHg7Df/5O/gtH3Yabe5odI3UWopVR1qbPXQtvOxWu3mM4XxlYeZtMWF4g==}
     dev: true
 
   /@types/ws@8.5.10:
@@ -7028,6 +7038,11 @@ packages:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
     hasBin: true
     dev: true
+
+  /uuid@9.0.1:
+    resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
+    hasBin: true
+    dev: false
 
   /validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
