@@ -1,1 +1,11 @@
-<app-create-task-form />
+<div class="container mx-10">
+  <app-create-task-form />
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+    <app-card-tasks title="Created" [filter]="taskStatus.CREATED" />
+    <app-card-tasks title="Completed" [filter]="taskStatus.COMPLETED" />
+    <app-card-tasks title="Aborted" [filter]="taskStatus.ABORTED" />
+    <app-card-tasks title="Active" [filter]="true" />
+    <app-card-tasks title="Inactive" [filter]="false" />
+  </div>
+</div>

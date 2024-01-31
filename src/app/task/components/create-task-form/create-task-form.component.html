@@ -1,1 +1,27 @@
-<p>create-task-form works!</p>
+<form class="max-w-md my-10" [formGroup]="taskForm" (ngSubmit)="create()">
+  <label class="form-control w-full">
+    <div class="label">
+      <span class="label-text">Title</span>
+    </div>
+    <input
+      type="text"
+      placeholder="Title"
+      class="input input-bordered w-full"
+      formControlName="title"
+    />
+  </label>
+
+  <label class="form-control w-full">
+    <div class="label">
+      <span class="label-text">Description</span>
+    </div>
+    <input
+      type="text"
+      placeholder="Description"
+      class="input input-bordered w-full"
+      formControlName="description"
+    />
+  </label>
+
+  <button class="btn btn-primary w-full mt-10" type="submit">Save</button>
+</form>

@@ -1,0 +1,32 @@
+<div class="card bg-base-100 shadow-xl">
+  <div class="card-body">
+    <h2 class="card-title">
+      {{ title }}
+    </h2>
+
+    @if (taskList().length <= 0) {
+    <div role="alert" class="alert alert-error font-bold text-white">
+      <span>Task is empty.</span>
+    </div>
+    }@else {
+    <div class="overflow-x-auto">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (task of taskList(); track $index) {
+          <tr>
+            <th>{{ task.title }}</th>
+            <td>{{ task.description }}</td>
+          </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+    }
+  </div>
+</div>

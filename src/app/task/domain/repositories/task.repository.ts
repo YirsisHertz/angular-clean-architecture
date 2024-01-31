@@ -12,6 +12,6 @@ export abstract class TaskRepository {
   abstract create(datasource: CreateTaskEntity): TaskEntity;
   abstract delete(id: TaskID): TaskEntity;
   abstract findAll(filter?: TaskFilter): TaskEntity[];
-  abstract findOneById(id: TaskID): TaskEntity;
+  abstract findOneById(id: TaskID): TaskEntity | undefined;
   abstract update(id: TaskID, datasource: TaskEntity): TaskEntity;
 }
